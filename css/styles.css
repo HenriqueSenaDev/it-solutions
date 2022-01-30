@@ -208,3 +208,24 @@ a {
   border-radius: 50%;
   margin: 15px;
 }
+
+/* Gallery */
+#gallery {
+  width: 90%;
+  margin: auto;
+  padding: 50px;
+}
+
+#gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  justify-items: center;
+}
+
+#gallery-container .gallery-image {
+  display: inline-block;
+  width: 350px;
+  height: 230px;
+  border-radius: 5px;
+}
