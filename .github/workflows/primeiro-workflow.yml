@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - run: echo "Arquivos do repositório copiados.""
+      - run: echo "Arquivos do repositório copiados."
       - uses: actions/setup-node@v6
         with:
           node-version: 22
@@ -18,4 +18,3 @@ jobs:
       - run: npm --version
       - run: echo "Pipeline executada com sucesso!"
       - run: ls -la
-      
