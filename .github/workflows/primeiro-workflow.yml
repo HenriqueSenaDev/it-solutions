@@ -1,0 +1,21 @@
+name: Job Atividade GC UFC 09-12
+on:
+  push:
+    branches:
+      - 'main'
+jobs:
+  Prints-Repo-Files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Arquivos do repositório copiados.""
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+      - run: echo "Ambiente node.js instalado corretamente."
+      - run: node --version
+      - run: npm --version
+      - run: echo "Pipeline executada com sucesso!"
+      - run: ls -la
+      
